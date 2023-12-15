@@ -71,6 +71,7 @@ public class ListaAdatok extends AppCompatActivity {
         modosit = findViewById(R.id.modositgomb);
         megse = findViewById(R.id.megsegomb);
         listaview = findViewById(R.id.listViewData);
+        listaview.setAdapter(new PersonAdapter());
         SharedPreferences sharedPreferences = getSharedPreferences("MyData", MODE_PRIVATE);
         url = sharedPreferences.getString("a", "");
         idecske=findViewById(R.id.etid);
